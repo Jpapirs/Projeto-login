@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root{
+    --verde:#49a09d
+    --lilas:#5f2c82
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    background-color:#5f2c82;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 265px;
+    height: 515px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    overflow: hidden;
+    transition:width .3s,height .3s ;
+    transition-timing-function: ease;
+}
+#login > #imagem{
+    background-color:#5f2c82 ;
+    background-image: url(../imagens/pexels-eliezer-fernandes-515183518-18750277.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    
+}
+
+#form{
+    padding: 10px;
+    display: block;
+}
+#form h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#form p{
+    font-size: .8em;
+    margin: 20px 0px;
+}
+.campo{
+    background-color: #5f2c82;
+    display: block;
+    height: 40px;
+    border-radius:8px;
+    margin: 5px 0px;
+    
+}
+label{
+    display: none;
+}
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input{
+    position: absolute;
+    background-color: #69ebe6;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+.campo > input:focus-within{
+    background-color: white;
+}
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#49a09d ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+form > input[type]:hover{
+    background-color: #295856;
+    cursor: pointer;
+}
+form > a#botao{
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #57bdba;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1b3938;
+}
+form > a#botao:hover{
+    background-color:#66deda;
+}
+
+#botao > span{
+    font-size:1em ;
+}
+
+
